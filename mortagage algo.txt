@@ -1,0 +1,19 @@
+STAGE ONE
+enter principal amount 
+enter annual intrest rate
+enter duration
+calculate the monthly payment 
+calculate number of monthly
+STAGE TWO
+Prompt user to enter principal amount
+collect and store
+Prompt user to enter annual intrest rate
+collect and store
+Prompt user to enter duration
+collect and store
+Change the calculation of years to months
+Calculate monthly rate
+To get monthly rate; divide annual rate by percentage  
+ Calculate number of months
+number of months= duration *number of months in a year
+Display result
