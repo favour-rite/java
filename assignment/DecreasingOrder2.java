@@ -3,22 +3,24 @@ import java.util.Scanner;
 		public static void main(String [] args){
 		Scanner input = new Scanner(System.in);
 
-		System.out.print("Enter number. ");
+		int sentinelValue = 0;
+
+		System.out.print("Enter number: ");
 		int number1  = input.nextInt();
 
-		System.out.print("Enter number. ");
+		System.out.print("Enter number: ");
 		int number2 = input.nextInt();
 
-		System.out.print("Enter number. ");
+		System.out.print("Enter number: ");
 		int number3 = input.nextInt();
+		
 
 		if (number3 > number2 && number2 > number1){
-			System.out.print("increasing order");
+			System.out.print("increasing order ");
 		}
 		else{
 			System.out.print("decreasing order ");
-		}
-			System.out.print("press 0 to quit ");
+		
 
 
 }
