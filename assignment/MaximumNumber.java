@@ -14,15 +14,17 @@ public class MaximumNumber{
 		int count= 0;
 	
        
-        int largest = number1;
-        if (number2 > largest) {
-            largest = number2;
-        }
-        if (number3 > largest) {
-            largest = number3;
+        int maximum = number1;
+
+        if (number2 > maximum) {
+            maximum = number2;
         }
 
-        System.out.println("Largest number: " + largest);
+        if (number3 > maximum) {
+            maximum = number3;
+        }
+
+        System.out.println("Maximum number: " + maximum);
     
 
 

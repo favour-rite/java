@@ -9,10 +9,10 @@ public class LeapYear{
 
 		if (leapYear % 4 == 0){
 			
-		System.out.println("it is a leap year: " );
+		System.out.println("it is a leap year: ");
 		}
 		else {
-		System.out.println("it is a not a leap year: " );
+		System.out.println("it is a not a leap year: ");
 
 
 		}
