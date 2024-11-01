@@ -7,9 +7,8 @@ import java.util.Scanner;
 
 		do{
 		
-
-		System.out.print("enter number ");
-		int number = input.nextInt();
+			System.out.print("enter number ");
+			int number = input.nextInt();
 		
 
 		if (number % 5 == 0 || number % 11 == 0){

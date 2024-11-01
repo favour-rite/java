@@ -4,8 +4,9 @@ import java.util.Scanner;
 		Scanner input = new Scanner (System.in);
 
 	
-			System.out.print("Enter number: ");
-			int number = input.nextInt();
+		System.out.print("Enter number: ");
+		int number = input.nextInt();
+
 		if (number % 2 == 0){ 
 			System.out.print("it is even ");
 		}

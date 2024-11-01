@@ -3,14 +3,11 @@ import java.util.Scanner;
 		public static void main(String [] args){
 		Scanner input = new Scanner(System.in);
 
-		int sentinelValue = 0;
-
+		
 		System.out.print("Enter number: ");
 		int number1  = input.nextInt();
-
 		System.out.print("Enter number: ");
 		int number2 = input.nextInt();
-
 		System.out.print("Enter number: ");
 		int number3 = input.nextInt();
 		
@@ -23,7 +20,7 @@ import java.util.Scanner;
 		
 
 
-}
+	}
 }		
 
 

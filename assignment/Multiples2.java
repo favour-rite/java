@@ -8,8 +8,8 @@ import java.util.Scanner;
 
 		do {
 		
-		System.out.print(" Enter number: ");
-		int number = input.nextInt();
+			System.out.print(" Enter number: ");
+			int number = input.nextInt();
 		
 		if (number % 5 == 0){
 			System.out.print("it is a multiple of five: ");	

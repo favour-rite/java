@@ -1,41 +1,31 @@
-import java.util.Scanner;
-public class TaxCalculator{
-	public static void main(String[] args){
-		Scanner input = new Scanner(System.in);
-
-
-	System.out.print("Enter annual salary: ");
-	int firstPersonSalary = input.nextInt();
-	System.out.print("Enter annual salary: ");
-	int secondPersonSalary = input.nextInt();
-	System.out.print("Enter annual salary: ");
-	int thirdPersonSalary = input.nextInt();
-
-		
-	if (firstPersonSalary > 30000 || secondPersonSalary > 30000 || thirdPersonSalary > 30000){
-	int firstPersonTax =(firstPersonSalary * 15) / 100;
-	int secondPersonTax = (secondPersonSalary * 15) / 100;
-	int thirdPersonTax = (thirdPersonSalary * 15) / 100;
+(input ("Enter annual salary: ")
+(input ("Enter annual salary: ")
 	
-	System.out.println(firstPersonTax);
-	System.out.println(secondPersonTax);
-	System.out.println(thirdPersonTax);
-
-	}
-	else {
-		
-	int firstPersonTax = (firstPersonSalary * 20) / 100;
-	int secondPersonTax = (secondPersonSalary * 20) / 100;
-	int thirdPersonTax = (thirdPersonSalary * 20) / 100;
+(input ("Enter annual salary: ")
 	
-	System.out.println(firstPersonTax);
-	System.out.println(secondPersonTax);
-	System.out.println(thirdPersonTax);
+if (firstPersonSalary > 30000 || secondPersonSalary > 30000 || thirdPersonSalary > 30000){
+firstPersonTax =(firstPersonSalary * 15) / 100
+secondPersonTax = (secondPersonSalary * 15) / 100
+thirdPersonTax = (thirdPersonSalary * 15) / 100
 
-	}
+print(firstPersonTax)
+print(secondPersonTax)
+print(thirdPersonTax)
+
 	
-	}
-}
+else:
+firstPersonTax = (firstPersonSalary * 20) / 100	 
+secondPersonTax = (secondPersonSalary * 20) / 100
+thirdPersonTax = (thirdPersonSalary * 20) / 100
+	
+print(firstPersonTax)
+print(secondPersonTax)
+print(thirdPersonTax)
+
+	
+	
+
+
 
 		
 		

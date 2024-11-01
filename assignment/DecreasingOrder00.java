@@ -8,9 +8,11 @@ import java.util.Scanner;
 			int number1  = input.nextInt();
 		}
 
-		int number1 = 0;
-		int number2 = 0;
-		int number3 = 0;
+			int number1 = 0;
+			int number2 = 0;
+			int number3 = 0;
+
+
 		if (number3 > number2 && number2 > number1){
 			System.out.print("increasing order ");
 		}

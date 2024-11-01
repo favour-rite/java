@@ -10,10 +10,10 @@ import java.util.Scanner;
 
 		if (number % 5 == 0 && number % 11 == 0){
 
-		System.out.print(" divisible by 5 ");
+			System.out.print("divisible by 5 ");
 		}
 		else {
-		System.out.print("divisible by 11 ");	
+			System.out.print("divisible by 11 ");	
 		}
 	
 		
