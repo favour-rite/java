@@ -1,5 +1,0 @@
-write a progra,m where a number you choose is assigned to a variable then get the user to guess the number once.
-
-
-loop the task
-use random to modify the question
