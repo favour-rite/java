@@ -1,8 +1,12 @@
 import java.util.Scanner;
-public class Nokia{
+public class Nokia2{
 	public static void main(String[] args){
 
-System.out.println("Welcome to your Nokia phone\n List of menu functions\n1 ->Phone book\n 2->Messages\n 3->Chat\n 4->Call register\n 5->Tones\n 6->Settings\n 7->Call divert\n 8->Games\n 9->Calculator\n 10->Reminders\n 11->Clock\n 12->Profiles\n 13->SIM services\n "); 
+		favour();
+	}
+
+	public static void favour(){
+		System.out.println("Welcome to your Nokia phone\n List of menu functions\n1 ->Phone book\n 2->Messages\n 3->Chat\n 4->Call register\n 5->Tones\n 6->Settings\n 7->Call divert\n 8->Games\n 9->Calculator\n 10->Reminders\n 11->Clock\n 12->Profiles\n 13->SIM services\n "); 
 
 System.out.println("menu");
 
@@ -23,25 +27,25 @@ int Phonebook = menu.nextInt();
 switch (Phonebook) {
 	case 1:
 		System.out.println("1:Search"); 
-			break;
+			favour();
 	case 2:
 		System.out.println("2:Service Nos");
-			 break;
+			 favour();
 	case 3:
 		System.out.println("3:Add Name");
-			 break;
+			favour();
 	case 4:
 		System.out.println("4:Erase"); 
-			break;
+			favour();
 	case 5:
 		System.out.println("5:Edit");
-			 break;
+			 favour();
 	case 6:
 		System.out.println("6:Assign Tone");
-			 break;
+			 favour();
 	case 7:
 		System.out.println("7:Send b'card"); 
-			break;
+			favour();
 	case 8:
 		System.out.println("Options\ninput an option\n 1. Types of view\n 2. Memory status");
 			Scanner Input = new Scanner(System.in);
@@ -49,25 +53,25 @@ switch (Phonebook) {
 			switch(Options) {
 		case 1:
 		System.out.println("Types Of View");
-			 break;
+			 favour();
 		case 2:
 		System.out.println("Memory Status");
-			 break;
+			 favour();
 			}
-			break;
+			favour();
 	case 9:
 		System.out.println("Speed Dials"); 
-			break;
+			favour();
 	case 10:
 		System.out.println("Voice Tags"); 
-			break;
+			favour();
 
 	default: System.out.print(" Invalid ");
-			break;
+			favour();
 
 		}
 		
-			break;
+			favour();
 	case 2:
 		System.out.println("Messages\n1:Write messages\n2:Inbox\n3:Outbox\n4:Picture messages\n5:Templates\n6:Smileys\n7:Message settings\n8:Info service\n9:Voice mailbox number\n10:Service command editor");
 
@@ -383,5 +387,6 @@ System.out.println("cost settings");
         break;
 		}
 	}
+
 }
 
