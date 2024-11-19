@@ -3,7 +3,7 @@ public class DoWhileLoopTask{
 	public static void main(String[] args){
 		Scanner input = new Scanner(System.in);
 		int number3 = 0;
-		do{
+			while(number3 != 0)
 			System.out.print("Enter number: ");
 				int number = input.nextInt();
 
@@ -15,6 +15,6 @@ public class DoWhileLoopTask{
 
 			System.out.println("Do u wish to play again: ");
 				number3 = input.nextInt();
-		}  while(number3 != 0);				
+						
 	}
 }

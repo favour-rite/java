@@ -84,22 +84,27 @@ switch (Messages) {
 
 	case 1:
 		System.out.println("Write messages"); 
-			break;
+			favour();
+
 	case 2:
 		System.out.println("Inbox");
-			 break;
+			favour();
+
 	case 3:
 		System.out.println("Outbox");
-			 break;
+			favour();
 	case 4:                                    
 		System.out.println("Picture messages"); 
-			break;
+			favour();
+
 	case 5:
 		System.out.println("Templates");
-			 break;
+			favour();
+
 	case 6:
 		System.out.println("Smileys");
-			 break;
+			 favour();
+
 	case 7:
 System.out.println("Message settings"); 
 System.out.println("input a number");
@@ -120,15 +125,19 @@ switch(MessagesSettings){
 		switch(menumapnumber){
 	case 1:	
 		System.out.println("Message Centre Number"); 
-			break;
+			favour();
+
 	case 2:
 		System.out.println("Message Sent As");
-			 break;
+			favour();
+
 	case 3:
 		System.out.println("Message Validity"); 
-			break;
+			favour();
+
 }
-			break;
+			favour();
+
 	case 2:
 		System.out.println("Common");
 		System.out.println("Input a number:");
@@ -141,36 +150,46 @@ switch(MessagesSettings){
 		switch (menumapnumber2) {
 	case 1:	
 		System.out.println("Delivery Reports");
-			 break;
+			favour();
+
 	case 2:
 		System.out.println("Reply Via Same Centre");
-			 break;
+			favour();
+
 	case 3:
 		System.out.println("Character Support");
-			 break;
+			favour();
+
 }
 
-			break;
+			favour();
+
 } 
-			break;
+			favour();
+
 
 	case 8:
 		System.out.println("Info sevice");
-			break;
+			favour();
+
 	case 9:
 		System.out.println("Voice mailbox number");
-			break;
+			favour();
+
 	case 10:
 		System.out.println("Service command editor");
-			break;
+			favour();
+
 		default: System.out.print(" Invalid ");
 }
-			break;
+			favour();
+
 	
 
 	case 3:
 		System.out.println("Chat");
-			break;
+			favour();
+
 		
 	case 4:
 		System.out.println(" call register/n 1: missed calls/n 2: received calls/n 3: Dialled number/n 4: Erase recent call lists/n 5: Show call duration/n 6: Show call costs/n 7: call cost settings/n 8: prepaid credit ");
@@ -184,17 +203,18 @@ switch(MessagesSettings){
 
 		case 1:	
 			System.out.println("missed calls");
-				break;
+				favour();
 		case 2:
 			System.out.println("received calls");
-				break;
+				favour();
 		case 3:
 			System.out.println("dialled numbers");
-				break;
+				favour();
+
 		case 4:
 			System.out.println("erase recent call lists");
 
-				break;
+				favour();
 		case 5:
 			System.out.println("1. last call duration/n 2. All calls'duration/n 3. Received calls'duration/n 4. dialled calls duratio/n  5. clear timers ");
 
@@ -207,21 +227,21 @@ switch(MessagesSettings){
 
 		case 1:	
 			System.out.println("last call duration");
-				break;
+				favour();
 		case 2:
 			System.out.println("all calls'duration");
-				break;
+				favour();
 		case 3:
 			System.out.println("received calls'duration");
-				break;
+				favour();
 		case 4:
 			System.out.println("dialled calls'duration");
-				break;
+				favour;
 		case 5:
 			System.out.println("clear timers");
-				break;			
+				favour();			
 }
-				break;
+				favour();
 		case 6:
 			System.out.println(" last call cost/n 2. All calls'cost /n3. Clear counters ");
 
@@ -234,14 +254,14 @@ System.out.println("call cost");
 	
 		case 1: 
 			System.out.println("Last call cost");
-				break;
+				favour();
 		case 2:
 			System.out.println("All calls'cost");
-				break;
+				favour();
 		case 3:
 			System.out.println("Clear counters");
 }
-				break;
+				favour();
 		case 7: 
 			System.out.println("call costs settings\n 1.call cost limit\n 2.show costs in");
 System.out.println("cost settings");
@@ -253,20 +273,20 @@ System.out.println("cost settings");
 
 		case 1:
 			System.out.println("1:Call cost limit");
-				break;
+				favour;
 		case 2:
 			System.out.println("2:Show costs in");
 }
-				break;
+				favour();
 		case 8:
 			System.out.println("3:Prepaid credit");
-				break;
-
+				favour;
+					
 		default: System.out.print(" Invalid ");
-				break;
+				favour();
 
 }
-			break;
+			favour();
 }switch (choice) {
     case 5:
         System.out.println("Tones");
@@ -278,33 +298,33 @@ System.out.println("cost settings");
         switch (tones) {
             case 1:
                 System.out.println("Ringing tone");
-                break;
+                favour;
             case 2:
                 System.out.println("Ringing volume");
-                break;
+                favour;
             case 3:
                 System.out.println("Incoming Call Alert");
-                break;
+                favour();
             case 4:
                 System.out.println("Composer");
-                break;
+                favour();
             case 5:
                 System.out.println("Message Alert Tone");
-                break;
+                favour();
             case 6:
                 System.out.println("Keypad Tones");
-                break;
+                favour();
             case 7:
                 System.out.println("Warning And Game Tones");
-                break;
+                favour();
             case 8:
                 System.out.println("Vibrating Alert");
-                break;
+                favour;
             case 9:
                 System.out.println("Screen Saver");
-                break;
+                favour();
         }
-        break;
+        favour();
     case 6:
         System.out.println("Call Settings");
         System.out.println("1. Automatic redial\n 2. Speed dialling\n 3. Call waiting options\n 4.Own number sending\n 5. Phone line in use\n 6. Automatic answer");
@@ -315,38 +335,38 @@ System.out.println("cost settings");
         switch (call) {
             case 1:
                 System.out.println("Automatic redial");
-                break;
+                favour();
             case 2:
                 System.out.println("Speed dialling");
-                break;
+                favour();
             case 3:
                 System.out.println("Call waiting options");
-                break;
+                favour();
             case 4:
                 System.out.println("Own number sending");
-                break;
+                favour();
             case 5:
                 System.out.println("Phone line in use");
-                break;
+                favour();
             case 6:
                 System.out.println("Automatic answer");
-                break;
+                favour();
         }
-        break;
+        favour();
     case 7:
         System.out.println("Call divert");
-        break;
+        favour();
     case 8:
         System.out.println("Games");
-        break;
+        favour();
     case 9:
         System.out.println("Calculator");
-        break;
+        favour();
     case 10:
         System.out.println("Reminder");
-        break;
+        favour();
 	default: System.out.print(" Invalid ");
-		break;
+		favour();
 
     case 11:
         System.out.println("Clock");
@@ -359,32 +379,32 @@ System.out.println("cost settings");
         switch (clock) {
             case 1:
                 System.out.println("Alarm Clock");
-                break;
+              		favour();
             case 2:
                 System.out.println("Clock Setting");
-                break;
+                	favour();
             case 3:
                 System.out.println("Date Setting");
-                break;
+                	favour();
             case 4:
                 System.out.println("Stopwatch");
-                break;
+                	favour();
             case 5:
                 System.out.println("Countdown Timer");
-                break;
+                	favour();
             case 6:
                 System.out.println("Auto update of date and time");
-                break;
+                	favour();
 	   default: System.out.print(" Invalid ");
 
         } 
-        break;
+        favour();
     case 12:
         System.out.println("Profiles");
-        break;
+        favour();
     case 13:
         System.out.println("Sim Services");
-        break;
+        favour();
 		}
 	}
 

@@ -18,7 +18,7 @@ import java.util.Scanner;
 ;
 	if (true ^ (x + =4) != 3)
 		System.out.print("");
-	if (number == number2 || number2 == number)
+	if (number == number2 || number2 == number);
 	if (number )
 
 

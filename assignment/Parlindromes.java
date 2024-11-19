@@ -6,7 +6,7 @@ public static void main(String[] args){
 
 	System.out.println(" Enter five numbers ");
 	int number = input.nextInt();
-	if(number > 11111 && number < 99999){
+	if(number > 00000 && number < 99999){
 		int num = number % 10;
 		int secondNumber = number / 10;
 		int remainder = secondNumber % 10;
