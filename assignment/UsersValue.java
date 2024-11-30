@@ -9,23 +9,20 @@ public class UsersValue{
 		
 		for (int count = 0; count < 10; count++){
 	
-		System.out.print("Enter 10 integer: ");
+		System.out.println("Enter 10 integer: ");
 		int number = input.nextInt();
 
-		if (number == 50){
+		if (number >= 50){
 
-			System.out.println("Good");
+			System.out.println("   to the next stage  ");
 
-		}else (number != 50){
-
-		System.out.print("bad");
 		}
+
+}		
 		
-		System.out.print(" ```> next stage <``` ");
 
 
 
-
-	}
+	
 }
 }

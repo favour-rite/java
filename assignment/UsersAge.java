@@ -9,12 +9,7 @@ public class UsersAge {
 
 		
 
-		System.out.print(" How old are you? \n 
-
-				Make selection \n
-				1.50\n
-				2.20\n
-				3.10 ");
+		System.out.print(" How old are you?\n 1.50\n 2.20\n 3.10 ");
 		int age = input.nextInt();
 
 		switch(age)  {

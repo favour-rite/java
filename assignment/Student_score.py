@@ -1,4 +1,4 @@
-User_input = int(input("Enter Score"))
+user_input = int(input("Enter Score"))
 
 for User_input in range(1,15)
 if User_input > 45:

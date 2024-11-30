@@ -6,39 +6,54 @@ public class Scores{
         
            Scanner input = new Scanner(System.in);
 
-		System.out.print("Enter number ");
-		int number = input.nextInt();
-        
-       		int count = 0;
-		int passed = 0;
-		int failed = 0;
-		int score = 0;
 
+       		int count = 0;
+		
 		while (count <= 30 ){
 		System.out.print("Enter number ");
-		int number = input.nextInt();
-        		count++;
-		 { 
+		int math = input.nextInt();
+		System.out.print("Enter number ");
+		int french = input.nextInt();
+
+		System.out.print("Enter number ");
+		int music = input.nextInt();
+
+		System.out.print("Enter number ");
+		int art = input.nextInt();
+
+		System.out.print("Enter number ");
+		int science = input.nextInt();
+
+
+			count++; 
+}
                  
 
     		 if(score >= 80){
            		 System.out.print("A");
-        	}
+        	}else  
+			System.out.println("f");
 
-       		 else if( score >= 60 && score < 80){
+       		 if( score >= 60 && score < 80){
           		 System.out.print("B");
-       		 } 
 
-      		 else if(score >= 40 && score < 60){
+       		 } else  
+			System.out.println("f");
+			
+
+      		 if(score >= 40 && score < 60){
           		  System.out.print("C");
-        	}
+			}
+        	else 
+			System.out.println("f");
 
+		}
 
-
+}
 		 		
 	
     }
-}
+
 
 
 
