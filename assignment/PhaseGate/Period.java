@@ -21,11 +21,6 @@ public class Period{
 	
 	System.out.print(" ~~~Enter Your Name: ");
 	String name = userInput.next();
-	
-
-
-
-
 
 	System.out.println();
 
