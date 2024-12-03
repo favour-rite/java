@@ -30,7 +30,7 @@ public class StudentGrade{
 					System.out.println("wrong input");
 				}
 
-				 total+=number;
+				 total += array[count][counter];
 			}
 		}
 
