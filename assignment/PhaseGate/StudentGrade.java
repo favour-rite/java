@@ -16,8 +16,11 @@ public class StudentGrade{
 
 		
 		int[][] array = new int[students][subjects];
+		int[][] array = new int[SUB1][SUB2];
+		int[][] array = new int[scores][total];
+		int[][] array = new int[average][position];
 		
-			int total = 0;
+		
 		for (int count = 0; count < students; count++) {
 			for (int counter = 0; counter < subjects; counter++) {
 			
@@ -30,10 +33,22 @@ public class StudentGrade{
 					System.out.println("wrong input");
 				}
 
-				 total += array[count][counter];
 			}
 		}
 
+
+		System.out.println(" ");
+
+
+		for(int row = 0; row <  ; row++){
+			for(int column = 0; column < ; column++){
+				
+				total += array[count][counter];
+
+			
+
+
+		}
 								
 			
 		

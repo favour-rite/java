@@ -47,6 +47,7 @@ public class App {
         System.out.println("Your next menstrual cycle is  " + nextPeriod);
 	
 
+<<<<<<< HEAD
 	System.out.print(" enter your ovulation length ");
 	int cycle = userInput.nextInt();
 
@@ -68,3 +69,9 @@ public class App {
 	System.out.println("===========================================");
 	}
 }
+=======
+        }
+    }
+}
+	
+>>>>>>> 75e457023f8364c3aaaf4650dc912995511ed464
