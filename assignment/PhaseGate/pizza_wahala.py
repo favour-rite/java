@@ -22,12 +22,10 @@ elif pizza == "Odogwu":
 	number_of_slices = 12
 	price_per_box = 4200
 
-boxes_of_pizza = (int) (guests / number_of_slices)+1;
+boxes_of_pizza = (guests / number_of_slices)+1;
 total_slice = boxes_of_pizza * number_of_slices;
 left_over = total_slice - guests;
 total_price = price_per_box * boxes_of_pizza;
-
-
 print("Number of pizza to buy: " , boxes_of_pizza , " boxes")
 print("Number of left_over: " , left_over , " slices")
 print("Price: " , total_price)

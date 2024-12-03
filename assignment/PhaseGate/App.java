@@ -1,130 +1,70 @@
 import java.time.LocalDate;
 import java.util.Scanner;
 
-public class App{
-	public static void main(String [] args){
-
-	Scanner userInput = new Scanner(System.in);
-		
-
-	System.out.println(" ~~~Your Period Your Safety~~~");
-	System.out.println(" Track Your Menstrual Cycle, Safe Cycle, Ovulation Dates ");
-
-	System.out.print(" ~~~Enter Your Name: ");
-	String name = userInput.next();
-	
-	System.out.println(" Enter age: ");
-	int age = userInput.nextInt();
-	if (age < 13 && age > 50){
-		System.out.println(" PIKIN wetin u dey find ");
-		System.out.print(" Obinrin: UNDERAGE!!!... ");
-	}else{
-		System.out.println("See the doctor");
-	}
-	
-	System.out.print("Enter your last period length");import java.time.LocalDate;
-import java.util.Scanner;
-
-public class MenstralApp {
+public class App {
     public static void main(String[] args) {
 
         Scanner userInput = new Scanner(System.in);
 
 
         System.out.println(" ~~Your Period Your Safety");
-        System.out.println(" Track Your Menstrual Cycle, Safe Cycle, Ovulation Dates ");
+        System.out.println(" Track Your Menstrual Cycle, Ovulation Dates ");
 
         System.out.print(" ~~~Enter Your Name: ");
         String name = userInput.next();
-        while (true) {
+
+       
             System.out.println(" Enter age: ");
             int age = userInput.nextInt();
-            if (age < 13) {
-                System.out.println(" PIKIN wetin u dey find ");
-                System.out.print(" Obinrin: UNDERAGE!!!... ");
-                break;
-            } else if (age > 50) {
-                System.out.println(" PIKIN wetin u dey find ");
-                System.out.print(" Obinrin: UNDERAGE!!!... ");
-                break;
 
-            } else {
-                System.out.print("Enter your last period length");
-                int length = userInput.nextInt();
+            if (age < 13) {
+                System.out.print(" Obinrin: UNDERAGE!!!... ");
+               	System.exit(0);
+            } else if (age > 50) {
+                System.out.print(" Go and rest or see ur Doctor ");
+		System.exit(0);
+            } 
+		
+		
+	System.out.println(" Menstrual length ranges between 21 to 35 ");
+	System.out.println("Enter your last period length");
+	int length = userInput.nextInt();
+		
                 if (length < 21) {
                     System.out.print("go and see your doctor");
-                    break;
+                   System.exit(0);
                 } else if (length > 35) {
                     System.out.print("go and see your doctor");
-                    break;
-                } else {
-
-                    System.out.println(" Enter your last menstrual period (format: yyy-month-day)");
-                    String lastMenstrualPeriod = userInput.next();
-
-                    LocalDate lastPeriod = LocalDate.parse(lastMenstrualPeriod);
-                    LocalDate nextPeriod = lastPeriod.plusDays(length);
-
-                    System.out.println("Your next menstrual cycle is  " + nextPeriod);
-                    System.out.print("enter your ovulation length");
-                    int cycle = userInput.nextInt();
-
-
-                    System.out.println("Enter  your last ovulation period (format: yyy-month-day)");
-                    String startDate = userInput.next();
-
-                    LocalDate ovul = LocalDate.parse(startDate);
-                    LocalDate nextOvul = ovul.plusDays(cycle);
-                    System.out.println("your next ovulation period is " + nextOvul);
-                    break;
-
+                   System.exit(0);
                 }
+	
+		
+        System.out.println(" Enter your last menstrual period (format: yyy-month-day)");
+        String lastMenstrualPeriod = userInput.next();
 
-            }
+        LocalDate lastPeriod = LocalDate.parse(lastMenstrualPeriod);
+        LocalDate nextPeriod = lastPeriod.plusDays(length);
+        System.out.println("Your next menstrual cycle is  " + nextPeriod);
+	
 
-        }
-    }
-}
-	int length = userInput.nextInt();
-	if(length < 21 && length > 35){
-		System.out.print("go and see your doctor");
-	}
-
-	System.out.println(" Enter your last menstrual period (format: yyy-month-day)");
-	String lastMenstrualPeriod = userInput.next();
-
-	LocalDate lastPeriod = LocalDate.parse(lastMenstrualPeriod);
-	LocalDate nextPeriod = lastPeriod.plusDays(length);
-
-	System.out.println("Your next menstrual cycle is  "+ nextPeriod);
-	System.out.print("enter your ovulation length");
+	System.out.print(" enter your ovulation length ");
 	int cycle = userInput.nextInt();
 
-
-	System.out.println("Enter  your last ovulation period (format: yyy-month-day)");
-	String startDate = userInput.next();
+	System.out.println(" Enter  your last ovulation period (format: yyy-month-day) ");
+ 	String startDate = userInput.next();
 
 	LocalDate ovul = LocalDate.parse(startDate);
 	LocalDate nextOvul = ovul.plusDays(cycle);
-	System.out.println("your next ovulation period is "+ nextOvul);
+	System.out.println(" Your next ovulation period is " + nextOvul);
 
 
-
-	System.out.print("Enter your menstruation last flow date: (format: yyyy-month-day): ");
-	String nextPeriod = input.next();
-	LocalDate ovul = LocalDate.parse(nextPeriod);
-	LocalDate nextOvul = ovul.plusDays(14);
-	System.out.println("your next ovulation period is "+ nextOvul);
-		}
+	System.out.print("Notice: Any other day that doesnt fall between the ovulation(fertile), menstural period is ur safe Cycle (whatever safe means to you omo genzs ). ");
 	
+	
+
+	System.out.println("===========================================");
+	System.out.println(" Thanks for Your Patronage ");
+	System.out.println(" Sign up for more details ");
+	System.out.println("===========================================");
 	}
-
-
-
-
 }
-
-
-
-
-

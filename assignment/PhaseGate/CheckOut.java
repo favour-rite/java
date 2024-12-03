@@ -3,6 +3,8 @@ import java.util.Scanner;
 public class CheckOut{
 
     public static void main(String [] args){
+
+
          ArrayList<String> productName = new ArrayList<>();
          ArrayList<Integer> quantity = new ArrayList<>();
          ArrayList<Double> price = new ArrayList<>();
@@ -51,11 +53,13 @@ public class CheckOut{
             total.add(totalPrice);
 
         }
+
         double subTotal = 0;
         double discountedPrice = 0;
         for(int index = 0; index < total.size(); index++){
             subTotal += total.get(index);
         }
+
         discountedPrice = (discountPercentage / 100) * subTotal;
 
 
