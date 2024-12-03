@@ -17,27 +17,34 @@ public class StudentGrade{
 		
 		int[][] array = new int[students][subjects];
 		
-		for (int count = 0; count < students.length; count++) {
-			for (int counter = 0; counter < subjects.length; counter++) {
+			int total = 0;
+		for (int count = 0; count < students; count++) {
+			for (int counter = 0; counter < subjects; counter++) {
+			
+				System.out.println("Enter score for student " + (count + 1) + " score for subject " + (counter + 1) + ": ");
+				int number = userInput.nextInt();
 
-				System.out.println("Enter score for student " + (count + 1) + " in subject " + (counter + 1) + ": ");
-				int array[count][counter] = userInput.nextInt();
-				System.out.println("Saving >>>>>>>>>>> ");
-
-				if(array[count][counter] < 100 && array[count][counter] > 0){
-					array[count][counter] = userInput.nextInt();
+				if(number < 100 && number > 0){
+					array[count][counter] = number;
 				}else{
-					break;
+					System.out.println("wrong input");
 				}
-		System.out.println("=====================================================");
-		System.out.println("STUDENT /t SUB1 /t SUB2 /t SUB3 /t TOTAL /t AVERAGE /t POSITION ");
-		System.out.println("=====================================================");
 
-
-				
+				 total+=number;
 			}
-
 		}
+
+								
+			
+		
+
+
+		System.out.println(" ======================================================================================================================= ");
+		System.out.println(" STUDENT\t "+" SUB1\t "+" SUB2\t "+" SUB3\t "+" TOTAL\t "+" AVERAGE\t "+" POSITION ");
+		System.out.println(" ======================================================================================================================= ");
+
+
+					
 
 		
 
