@@ -17,12 +17,18 @@ public class StudentGrade{
 		
 		int[][] array = new int[students][subjects];
 		
-		for (int count = 0; count < students; count++) {
-			for (int counter = 0; counter < subjects; counter++) {
+		for (int count = 0; count < students.length; count++) {
+			for (int counter = 0; counter < subjects.length; counter++) {
 
 				System.out.println("Enter score for student " + (count + 1) + " in subject " + (counter + 1) + ": ");
-				array[count][counter] = userInput.nextInt();
-				System.out.println("Saved");
+				int array[count][counter] = userInput.nextInt();
+				System.out.println("Saving >>>>>>>>>>> ");
+
+				if(array[count] < 100){
+					array[count] = userInput.nextInt();
+				}else(array[counter] > 0){
+					array[counter] = userInput.nextInt();
+				}break;
 			}
 		}
 
