@@ -24,12 +24,19 @@ public class StudentGrade{
 				int array[count][counter] = userInput.nextInt();
 				System.out.println("Saving >>>>>>>>>>> ");
 
-				if(array[count] < 100){
-					array[count] = userInput.nextInt();
-				}else(array[counter] > 0){
-					array[counter] = userInput.nextInt();
-				}break;
+				if(array[count][counter] < 100 && array[count][counter] > 0){
+					array[count][counter] = userInput.nextInt();
+				}else{
+					break;
+				}
+		System.out.println("=====================================================");
+		System.out.println("STUDENT /t SUB1 /t SUB2 /t SUB3 /t TOTAL /t AVERAGE /t POSITION ");
+		System.out.println("=====================================================");
+
+
+				
 			}
+
 		}
 
 		
