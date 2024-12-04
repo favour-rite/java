@@ -7,6 +7,13 @@ public class StudentGrade{
 		Scanner userInput = new Scanner(System.in);
 	
 		
+
+			studentsScores();
+
+
+
+			}
+
 			System.out.println(" ~~~ STUDENTGRADEAPP )SG( ~~~ ");
 
 			System.out.println("================================= ");		
@@ -19,46 +26,37 @@ public class StudentGrade{
 
 		
 
-		int[][] studentScores = new int[students][subjects];
-		int[] totalsheet = new int[scores][total];
-		//int[][] position = new int[average][position];
+		int[][] array = new int[students][subjects];
 		
-		double studentTotal = 0;
-		double studentAverage;
-		for (int count = 0; count < students; count++) {
-			for (int counter = 0; counter < subjects; counter++) {
-
-				System.out.println("Enter score for student " + (count + 1) + " score for subject " + (counter + 1) + ": ");
+		public static void studentsScores(){
+		int totalScore = 0;
+		for (int row = 0; row < subjects; row++) {
+			for (int column = 0; column < students; column++) {
+				totalScore+=array[row][column];	
+				System.out.println("Enter score for student " + (row + 1) + " score for subject " + (column + 1) + ": ");
 				int number = userInput.nextInt();
 				
 				if(number < 100 && number > 0){
-					studentScores[count][counter] = number;
+					array[row][column] = number;
 				}else{
 					System.out.println("wrong input");
-					counter--;
+					column--;
 				}
-			studentTotal+=number[];
-
+			System.out.printf(" Total Score is: %d%n " , totalScore);
 			}
 		}
-
-		
-		for(){
-			for(int column = 0; column < subjects; column++){
-				studentTotal.append(column);
-				System.out.print(studentTotal);
-			}
 		}
+	
+	
+		
 		
 
-	}
+	
 }
 
 
 
-		//public static void getPosition(){
 
-		//}
 
        
 		//System.out.println(" ======================================================================================================================= ");
