@@ -68,10 +68,10 @@ public class StudentGrade{
 		System.out.println("TOTAL\tAVERAGE\tPOSITION\t");
 		System.out.println(" ======================================================================================================================= ");
 					for(int count = 1; count <= subjects; count++){
-						System.out.println("Student" + count + "\t");
+						System.out.print("Student" + count + "\t");
 
 						for(int counter = 0; counter < subjects; counter++){
-							System.out.println(spreadSheet[count-1][counter] + "\t");
+							System.out.print(spreadSheet[count-1][counter] + "\t");
 							totalScore+= spreadSheet[count-1][counter];	
 						}
 					
@@ -88,8 +88,11 @@ public class StudentGrade{
 		System.out.println(" ======================================================================================================================= ");
 		}
 		
-		//array.sort();	
+		//int[][] position = array.sort(spreadSheet);
+		//for(int index = 0; index <= ; index++){
 
+//		}	
+		
 	
 	
 	
