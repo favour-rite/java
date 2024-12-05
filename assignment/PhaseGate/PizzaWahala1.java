@@ -3,9 +3,7 @@ public class PizzaWahala{
 	public static void main (String [] args){
 
 	System.out.println("Enter number of guests at the birthday party: ");
-	System.out.println("Enter size : 
-			1. Sapa size
-		 	2. Small money, big boys, Odogwu "))
+	System.out.println("Enter size : Sapa size Small money, big boys, Odogwu "))
 
 
 
@@ -29,11 +27,8 @@ public class PizzaWahala{
 		price_per_box = 4200
 	}
 
-boxes_of_pizza = (guests / number_of_slices)+1;
-total_slice = boxes_of_pizza * number_of_slices;
-left_over = total_slice - guests;
 
-total_price = price_per_box * boxes_of_pizza;
+
 System.out.print("Number of pizza to buy: " , boxes_of_pizza , " boxes");
 System.out.print("Number of left_over: " , left_over , " slices");
 System.out.print("Price: " , total_price);
