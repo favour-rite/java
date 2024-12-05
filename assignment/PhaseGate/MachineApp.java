@@ -5,12 +5,11 @@ public class MachineApp{
 
 	Scanner userInput = new Scanner(System.in);		
 
-	 String name = null;
-	String lastName = null;
+	String names = null;
 	String pin = " 0000";
 	int accountBalance = 10000;
 	boolean sentinel = true;
-	
+	double transferAmount;
 
 	
 while(sentinel){
@@ -32,11 +31,8 @@ while(sentinel){
 
 	switch(menu){
 
-		case 1: System.out.println(" Enter first name: ");
-			name = userInput.next();
-
-			System.out.println("Enter ur last name: ");
-			lastName = userInput.next();
+		case 1: System.out.println(" Enter first name and last name: ");
+			names = userInput.next();
 
 			System.out.println(" Enter pin: ");
 			pin = userInput.next();
@@ -59,18 +55,53 @@ while(sentinel){
 			if(!maybepin.equals(pin) || pin.length() != 4){
 				System.out.println("Invalid input Try Again");
 				break;
-			}
-			if(withdrawal <= accountBalance){
+			} 
+			if(withdrawal <= accountBalance && withdrawal < 0){
 				accountBalance -= withdrawal;
 				System.out.println("Insufficient Funds!!");
-				System.out.println(name + lastName + "Your Balance is:"+ accountBalance);
+				System.out.println(name + lastName + "Your Balance is: &"+ accountBalance);
 			}
 			break;
 
 		case 3: System.out.println("deposite money ");
 			double deposite = userInput.nextDouble();
+			if(deposite < 0){
 				deposite+=accountBalance;
-				System.out.println(name + lastName + " Your Balance is:"+ deposite);	
+			}else {
+				System.out.print()"Invalid amount";
+			}
+			System.out.println(name + lastName + " Your Balance is: $" + deposite);
+			break;
+		case 4: System.out.println("Change pin");
+
+
+
+
+		case 5: System.out.println("enter ur pin");
+                   	 inputPin = scanner.nextInt();
+
+                   	if (inputPin == pin) {
+			System.out.print("Enter amount you want to transfer: ");
+                        double transferAmount = scanner.nextDouble();
+			}
+
+                        if (transferAmount > 0 && transferAmount <= balance) {
+                            balance -= transferAmount;
+
+                        	System.out.println("Transferred: $" + transferAmount);
+                        } else {
+                            System.out.println("Transfer failed: Insufficient funds or invalid amount.");
+                        }
+
+                    } else {
+                        System.out.println("Incorrect pin. Transfer not possible.");
+                    }
+                    break;
+
+		case 6: System.out.println("Current balance: $" + balance);
+                    break;
+
+			
 		case 8:
 			sentinel = false;
 			break;				
