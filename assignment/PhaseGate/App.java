@@ -47,8 +47,7 @@ public class App {
         System.out.println("Your next menstrual cycle is  " + nextPeriod);
 	
 
-<<<<<<< HEAD
-	System.out.print(" enter your ovulation length ");
+	System.out.print(" enter your ovulation length: 10-12 days ");
 	int cycle = userInput.nextInt();
 
 	System.out.println(" Enter  your last ovulation period (format: yyy-month-day) ");
@@ -58,10 +57,24 @@ public class App {
 	LocalDate nextOvul = ovul.plusDays(cycle);
 	System.out.println(" Your next ovulation period is " + nextOvul);
 
+	
+	System.out.print("Enter day of your last period:(format: yyy-month-day) ");
+	String flowDate = userInput.next();
 
-	System.out.print("Notice: Any other day that doesnt fall between the ovulation(fertile), menstural period is ur safe Cycle (whatever safe means to you omo genzs ). ");
+	LocalDate lastFlowDate = LocalDate.parse(flowDate);
+	LocalDate firstFlowDate = lastFlowDate.plusDays(1);
+
+	System.out.println("Your first flow date is: " + firstFlowDate);
 	
-	
+	System.out.println("Enter length of Your menstrual period ");
+	int lengthofCycle = userInput.nextInt();
+	int averagelength = cycle/lengthofCycle;
+	int result = cycle - averagelength;
+
+	LocalDate safePeriod = firstFlowDate.plusDays(result);	
+	System.out.println("Safe period starts from: " + safePeriod);
+
+	System.out.print("Notice: Any other day that doesnt fall between the ovulation(fertile), menstural period is ur safe Cycle (whatever safe means to you omo genzs) ");	
 
 	System.out.println("===========================================");
 	System.out.println(" Thanks for Your Patronage ");
@@ -69,9 +82,3 @@ public class App {
 	System.out.println("===========================================");
 	}
 }
-=======
-        }
-    }
-}
-	
->>>>>>> 75e457023f8364c3aaaf4650dc912995511ed464

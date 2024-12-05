@@ -2,6 +2,12 @@ import java.util.Scanner;
 public class PizzaWahala{
 	public static void main (String [] args){
 
+	System.out.println("Enter number of guests at the birthday party: ");
+	System.out.println("Enter size : 
+			1. Sapa size
+		 	2. Small money, big boys, Odogwu "))
+
+
 
 
 	int number_of_slices = 0;

@@ -5,11 +5,14 @@ public class MachineApp{
 
 	Scanner userInput = new Scanner(System.in);		
 
-			
-	int pin = 0000;
+	 String name = null;
+	String lastName = null;
+	String pin = " 0000";
 	int accountBalance = 10000;
 	boolean sentinel = true;
+	
 
+	
 while(sentinel){
 		System.out.println("""
 			
@@ -18,10 +21,10 @@ while(sentinel){
 		[1.]Create an Account
 			
 		[2.] Withdrawal
-		[3.] Close account
-		[4.] Deposite
+		[3.] Deposite
+		[4.] Transaction
 		[5.] Check Account Number
-		[6.] Transaction
+		[6.] Close account
 		[7.] Change Pin
 		[8.] Exit 
 	""");
@@ -30,53 +33,59 @@ while(sentinel){
 	switch(menu){
 
 		case 1: System.out.println(" Enter first name: ");
-			String name = userInput.next();
+			name = userInput.next();
 
 			System.out.println("Enter ur last name: ");
-			String lastName = userInput.next();
+			lastName = userInput.next();
 
 			System.out.println(" Enter pin: ");
-			pin = userInput.nextInt();
+			pin = userInput.next();
 
 			System.out.println("Enter bvn: ");
-			int bvn = userInput.nextInt();
-			
+			String bvn = userInput.next();
 		
 			System.out.println("Enter number: ");
-			int number = userInput.nextInt();
+			double number = userInput.nextDouble();
+		
 			break;
 			
-		case 2: System.out.println(" WITHDRAW ");
+
+		case 2: System.out.println("Enter amount to withdraw: ");
 			int withdrawal = userInput.nextInt();
 
 			System.out.println(" Enter pin: ");
-			int maybepin = userInput.nextInt();
+			String maybepin = userInput.next();
 			
-			if(maybepin != pin || maybepin != 4){
-				System.out.println("Invalid input");
+			if(!maybepin.equals(pin) || pin.length() != 4){
+				System.out.println("Invalid input Try Again");
+				break;
 			}
 			if(withdrawal <= accountBalance){
 				accountBalance -= withdrawal;
-				System.out.println("Your Balance is:"+ accountBalance);
+				System.out.println("Insufficient Funds!!");
+				System.out.println(name + lastName + "Your Balance is:"+ accountBalance);
 			}
 			break;
-		case 3: System.out.println("Check deposite");
 
+		case 3: System.out.println("deposite money ");
+			double deposite = userInput.nextDouble();
+				deposite+=accountBalance;
+				System.out.println(name + lastName + " Your Balance is:"+ deposite);	
 		case 8:
 			sentinel = false;
 			break;				
+		}
 	}
-}
 
 
 
 
 }
 
+
+
+
 }
-
-
-
 
 
 
