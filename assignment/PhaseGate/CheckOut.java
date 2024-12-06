@@ -110,6 +110,7 @@ public class CheckOut{
 		======================================%n""",subTotal, discountedPrice, vat);
         System.out.printf("""
 			Bill Total: %.2f
+
 	
 			 Amount Paid: %.2f
 			     Balance: %.2f%n""",billTotal, amountPaid, balance);
