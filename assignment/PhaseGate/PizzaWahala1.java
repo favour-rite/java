@@ -7,6 +7,7 @@ public class PizzaWahala1{
 
 	System.out.println("Enter number of guests at the birthday party: ");
 	int orders = userInput.nextInt();
+
 	System.out.println("Enter size : Sapa size Small money, big boys, Odogwu ");
 	int pizzaSize = userInputInt();
 
@@ -28,6 +29,7 @@ public class PizzaWahala1{
 			number_of_slices4 = 12;
 			price_per_box = 4200;
 		}
+
 	number0fBboxes =(orders/ numberofslices);
 	leftOver = (numberOfBoxes * numberofslices) - orders;
 	totalPrices = numberOfBboxes * pricesperbox;
@@ -36,18 +38,6 @@ public class PizzaWahala1{
 	System.out.println("Numbers of pizza to buy: " + numberOfBboxes + boxes);
 	System.out.println("Numbers of leftOver: " + leftOver +  slices);
 	System.out.println("Price: " + totalPrices);
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 	}
