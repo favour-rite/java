@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class EvenNumbers{
+	public static void main(String [] args){
+
+		Scanner input = new Scanner(System.in);
+	
+		System.out.print("Enter a number ");
+		int number = input.nextInt();
+
+		System.out.print("Enter a number ");
+		int number2 = input.nextInt();
+
+		for (cint count = 0; count < 2; count+=2)
+
+		
+
+
+
+
+
+
+
+
+
+
+
+	}
+
+}
+
+
+	
+		
+
+
+	
+		
+

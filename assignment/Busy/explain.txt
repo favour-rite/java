@@ -1,0 +1,23 @@
+1. I have issues understanding the place of Enum, package, and record with relation to when it is a good situation to use them and how they fit into my algorithm design.
+
+2. ⁠I need someone to help me understand when and how to use composition over inheritance and vice versa, 
+3. ⁠the concept of multiple inheritance and its relationship with Java interfaces 
+
+
+  
+Enum to gave me a hard time wrapping my head around too, especially when we were told to use Enum class to build the X and O. When constant 'final String X = "X"... ' will also work.
+
+That's basically what Enums are, constant but more.
+Then I am using it in the compound interest task, it now made sense.
+
+I recommend you use it, (chapter 6.10 and 8.9) was a great help.
+If you are thinking of Enum from (fig 6.8) example it could look unnecessary.
+
+Basically a class where you can declare related constants for use latter
+Exactly keyword "related constant"
+
+X, 0  and empty are related (the only three pieces accepted on the board), and their values don't change.
+having a hard time knowing:
+1. when to use either interface or abstract classes
+
+respect is not just given. it is earned through your actions words and behavior

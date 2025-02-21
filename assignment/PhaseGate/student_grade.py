@@ -21,7 +21,7 @@ return students
 
 def studentsDetails2()
 
-print(input("How many subject do they offer: "))
+print(input(" How many subject do they offer: "))
 print(" ================================= ")
 
 return subjects

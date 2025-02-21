@@ -70,7 +70,7 @@ def search_by_name():
 
 	for contact in contacts:
 
-		if contacts["name"] == name:
+		if contact["name"] == name:
 			print(" Search Results ")
 			print(contact)
 		else:

@@ -63,6 +63,9 @@ public class App {
 
 	LocalDate lastFlowDate = LocalDate.parse(flowDate);
 	LocalDate firstFlowDate = lastFlowDate.plusDays(1);
+	LocalDate firstFlowDate = lastSafeDays.plusDays(1);
+	
+
 
 	System.out.println("Your first flow date is: " + firstFlowDate);
 	

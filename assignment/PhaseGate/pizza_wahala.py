@@ -1,9 +1,26 @@
 import math
 
-orders = int(input("Enter number of guests that will attend the birthday party: "))
-pizza_sizes = (input("sapa size:, small money:, big boys:, odogwu: "))
+print(" Iya Abimbola Pizza joint Yaba ")
 
-	
+orders = int(input(" Enter number of guests that will attend the birthday party: "))
+
+pizza_sizes = (input("""  
+	_________________________________________________________
+	|pizza type 	|Number of Slices	|Price perbox 	|
+	|_______________________________________________________|
+	|sapa size	|	4		|	2,000   |
+	|_______________________________________________________|
+	|small money	|	6		|	2,400   |
+	|_______________________________________________________|
+	|big boys	|	8		|	3000    |
+	|_______________________________________________________|
+	|odogwu: 	|	12		|	4,200   |
+	|_______________________________________________________|
+
+		Enter pizza type you want to buy: 
+	"""))
+
+
 price_per_box = 0
 number_of_slices = 0
 
